@@ -79,3 +79,7 @@
   font-weight: 500;
   cursor: pointer;
 }
+.LinkRegister{
+  text-decoration: none;
+  color: white;
+}
