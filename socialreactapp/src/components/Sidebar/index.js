@@ -1,8 +1,18 @@
 import React from "react";
 import "./style.css";
-import { FaBookmark, FaCalendarAlt, FaPlayCircle, FaQuestionCircle, FaScroll, FaShoppingBag, FaStackExchange, FaUsers, FaWifi } from "react-icons/fa";
+import {
+  FaBookmark,
+  FaCalendarAlt,
+  FaPlayCircle,
+  FaQuestionCircle,
+  FaScroll,
+  FaShoppingBag,
+  FaStackExchange,
+  FaUsers,
+  FaWifi,
+} from "react-icons/fa";
 import CloseFriend from "../CloseFriend";
-import {Users} from '../../Pages/UsersData';
+import { Users } from "../../Pages/UsersData";
 
 const Sidebar = () => {
   return (
@@ -47,17 +57,11 @@ const Sidebar = () => {
           </li>
         </ul>
         <button className="sidebarButton">Show More</button>
-        <hr className="sidebarHr"/>
+        <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
-          {
-            Users.map((u)=>(
-              <CloseFriend key={u.id} user={u}/>
-
-            ))
-          }
-
-   
-        
+          {Users.map((u) => (
+            <CloseFriend key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>
