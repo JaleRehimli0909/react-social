@@ -92,8 +92,6 @@ const Rightbar = ({ profile }) => {
             />
             <span className="rightBarFollowingName">Jale Rehimli</span>
           </div>
-
-      
         </div>
       </>
     );
@@ -102,6 +100,7 @@ const Rightbar = ({ profile }) => {
   return (
     <div className="Rightbar">
       <div className="rigthbatWrapper">
+        {profile ? <ProfileRightBar /> : <HomeRightBar />}
         <ProfileRightBar />
       </div>
     </div>

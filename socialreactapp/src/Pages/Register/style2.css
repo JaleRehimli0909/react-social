@@ -9,15 +9,12 @@
 .loginWrapper {
   width: 70%;
   height: 70%;
-  /* background-color: yellow; */
   display: flex;
 }
 
 .loginLeft {
-  /* background-color: grey; */
 }
 .loginRight {
-  background-color: rgb(171, 100, 100);
 }
 .loginLeft,
 .loginRight {
@@ -38,7 +35,7 @@
 .loginRight {
 }
 .loginBox {
-  height: 300px;
+  height: 400px;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
